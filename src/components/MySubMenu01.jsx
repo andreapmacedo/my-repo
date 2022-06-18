@@ -3,10 +3,10 @@ import { useEffect } from "react";
 import { sideMenuData } from "../data/sideBarData";
 import './MySideBar.css'
 
-function MySideBar(params) {
+function MySubMenu01(params) {
   
   const [menuItems, setMenuItems] = useState(sideMenuData);
-  const [colapsedItems, setColapsedItems] = useState([]);
+  const [collapsedItems, setColapsedItems] = useState([]);
   const [indexState, setIndexState] = useState(0)
   // const [indexState, setIndexState] = useState()
 
@@ -16,15 +16,15 @@ function MySideBar(params) {
   // }
 
   function checkSome(index){
-    return colapsedItems.some((colapsedItem) => colapsedItem === index)
+    return collapsedItems.some((collapsedItem) => collapsedItem === index)
   }
 
   function handleColapsed(itemIndex) {
     // Verifica se o botão já está "colapsado"
     setIndexState(itemIndex)
-    const colapsed = checkSome(itemIndex)
-    if (!colapsed) {
-      setColapsedItems([...colapsedItems, itemIndex])
+    const collapsed = checkSome(iuncollapsedtemIndex)
+    if (!collapsed) {
+      setColapsedItems([...collapsedItems, itemIndex])
     } else {
       // console.log('ja tem ');
       let filtered = [];
@@ -32,7 +32,7 @@ function MySideBar(params) {
         // console.log(index, itemIndex);
         if (index !== itemIndex){
           
-          if( colapsedItems.includes(index) ){
+          if( collapsedItems.includes(index) ){
             filtered.push(index)  
           }
         } 
@@ -45,11 +45,11 @@ function MySideBar(params) {
 
   function getClassName(itemIndex) {
     
-    const colapsed = checkSome(itemIndex)
-    if (!colapsed) {
-      return 'colapsed';
+    const collapsed = checkSome(itemIndex)
+    if (!collapsed) {
+      return 'collapsed';
     } else {
-      return 'uncolapsed';
+      return 'uncollapsed';
     }
   }
 
@@ -90,4 +90,4 @@ function MySideBar(params) {
   )
 }
 
-export default MySideBar
+export default MySubMenu01

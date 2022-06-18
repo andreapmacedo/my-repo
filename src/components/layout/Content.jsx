@@ -6,7 +6,7 @@ import Home from '../../views/examples/Home'
 import NotFound from '../../views/examples/NotFound'
 import UseState from '../../views/examples/Componentes'
 // import UseEffect from '../../views/examples/UseEffect'
-import MyMenu from '../../views/examples/MyMenu'
+import MySideMenu from '../../views/examples/MySideMenu'
 import UseCallback from '../../views/examples/UseCallback'
 import UseMemo from '../../views/examples/UseMemo'
 import UseContext from '../../views/examples/UseContext'
@@ -26,7 +26,7 @@ const Content = props => (
                 <Logica />
             </Route>
             <Route path="/myMenu">
-                <MyMenu />
+                <MySideMenu />
             </Route>
             <Route path="/frameworks">
                 <UseCallback />

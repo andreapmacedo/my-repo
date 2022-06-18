@@ -1,6 +1,6 @@
 import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
-import MySideBar from '../../components/MySideBar'
+import MySideBar from '../../components/MySubMenu02'
 
 const MyMenu = (props) => {
     return (

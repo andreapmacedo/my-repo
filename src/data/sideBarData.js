@@ -1,21 +1,27 @@
 export const sideMenuData = [
   {
-    name: 'section 1',
+    name: '1',
     subMenu: []
   },
   {
-    name: 'section 2',
+    name: '2',
     subMenu: [  {
-      name: 'section 2, submenu 1',
+      name: '2.1',
+      subMenu: []
+    },{
+      name: '2.2',
+      subMenu: []
+    },{
+      name: '2.3',
       subMenu: []
     },]
   },
   {
-    name: 'section 3',
+    name: '3',
     subMenu: [  {
-      name: 'section 3, submenu 1',
+      name: '3.1',
       subMenu: [  {
-        name: 'section 3, submenu 1, submenu 1',
+        name: '3.1.1',
         subMenu: []
       },]
     },]
